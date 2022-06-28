@@ -7,7 +7,6 @@ const {Provider} = CartContext
 const CartProvider = ({children}) => {
 
   const [cart, setCart] = React.useState([])
-  console.log(cart)
 
   //agregar al carrito
   const addToCart = (item, count) => {

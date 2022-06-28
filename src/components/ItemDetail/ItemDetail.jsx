@@ -40,7 +40,7 @@ export default function ItemDetail({item}) {
                 <Button className='card-button'variant="primary">${item.price}</Button>
                 {
                   goToCart 
-                  ? <Link className='card-button-terminar'to='/cart'>Terminar Compra</Link>
+                  ? <Link className='card-button-terminar'to='/cart'>Ir al carrito</Link>
                   :  <ItemCount 
                           onAdd={onAdd}
                           stock={item.stock} 

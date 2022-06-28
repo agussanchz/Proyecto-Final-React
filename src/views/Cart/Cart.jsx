@@ -8,13 +8,10 @@ export default function Cart() {
 
   const { cart, totalPrice, deleteAll } = React.useContext(CartContext)
 
-
-
-
   if (cart.length === 0){
     return (
       <div className='cart-vacio'>
-        <h2 className='title__cart'>Tu carrito esta vacio :(</h2>
+        <h2 className='title__cart'>Tu carrito esta vacio!</h2>
 
         <div className='button__cart'>
           <Link to={'/products'}>

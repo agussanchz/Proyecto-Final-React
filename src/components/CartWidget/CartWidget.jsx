@@ -8,7 +8,6 @@ export default function CartWidget() {
     
     const { cart } = React.useContext(CartContext)
     
-
     return (
         <div className='cardWidget'>
             <Link className='icon-cart' to={'/cart'}>
