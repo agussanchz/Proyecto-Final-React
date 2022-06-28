@@ -1,0 +1,358 @@
+/* -------------------------------------------
+            Estilo Generales
+--------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 4rem;
+    background-color: rgb(0, 0, 0);
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+}
+
+#root {
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* -------------------------------------------
+            Estilo Navbar
+--------------------------------------------*/
+.navbar{
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar_logo {
+    text-decoration: none;
+    color: rgba(224, 233, 233, 0.918);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar_logo:hover {
+    color: rgba(92, 187, 187, 0.918);
+}
+
+#collasible-nav-dropdown {
+    color:rgba(224, 233, 233, 0.918);;
+}
+
+#collasible-nav-dropdown:hover {
+    color:rgba(92, 187, 187, 0.918);
+}
+
+.nav__link {
+    text-decoration: none;
+    color: rgba(224, 233, 233, 0.918);
+}
+
+.nav__link:hover {
+    color: rgba(92, 187, 187, 0.918);
+}
+
+.category {
+    color:rgba(82, 84, 84, 0.918);
+}
+
+.category:hover {
+    color:rgba(92, 187, 187, 0.918);
+}
+
+
+/* -------------------------------------------
+            Estilo Home
+--------------------------------------------*/
+.home {
+    padding-top: 300px;
+    height: 840px;
+}
+
+.home h1 {
+    display: flex;
+    justify-content: center;
+    color: rgba(92, 187, 187, 0.918);
+}
+
+.home_title {
+    position: relative;
+}
+
+.home_title::after {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100px;
+    right: 0;
+    position: absolute;
+    animation: maquinaescribir 3s infinite alternate; 
+}
+
+@keyframes maquinaescribir {
+    from{
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+/* -------------------------------------------
+            Estilo Products
+--------------------------------------------*/
+.title__products {
+    display: flex;
+    justify-content: center;
+    color: rgba(224, 233, 233, 0.918);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title__products:hover {
+    color: rgba(92, 187, 187, 0.918);
+}
+
+
+/* -------------------------------------------
+            Estilo card Item
+--------------------------------------------*/
+.card {
+    margin: 10px auto;
+    width: 23rem;
+    background: rgba(77, 74, 74, 0.253) !important; 
+}
+
+.item-card {
+    animation-name: opacar;
+    animation-duration: 3s;
+}
+
+@keyframes opacar {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.card-body {
+    color: rgba(224, 233, 233, 0.918);
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+
+.card-button {
+    width: 100%;
+    background-color: rgba(92, 187, 187, 0.918) !important;
+    border: none !important;
+}
+
+/* -------------------------------------------
+            Estilo card ItemDetail
+--------------------------------------------*/
+.card-text {
+    display: flex;
+    justify-content: center;
+}
+
+.counter {
+    background-color: rgba(224, 233, 233, 0.918);
+    color: black;
+}
+
+.counter-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.counter-button button {
+    border: none;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(92, 187, 187, 0.918);
+}
+
+.counter-button span {
+    padding: 3px;
+}
+
+.span-cart {
+    padding-left: 4px;
+}
+
+
+.counter-button-goCart {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.counter-button-goCart button {
+    border: none;
+    width: 300px;
+    height: 30px;
+    background-color: aliceblue;
+}
+
+.card-button-terminar {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: rgba(224, 233, 233, 0.918);
+}
+
+.card-button-terminar:hover{
+    color: rgba(92, 187, 187, 0.918);
+}
+
+
+/* -------------------------------------------
+            Estilo Spinner
+--------------------------------------------*/
+.container-spinner {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    align-items: center;
+}
+
+.spinner{
+    color: rgba(92, 187, 187, 0.918);
+    width: 70px !important;
+    height: 70px !important;
+}
+
+/* -------------------------------------------
+            Estilo Cart
+--------------------------------------------*/
+.icon-cart{
+    font-size: 20px;
+    color: rgba(92, 187, 187, 0.918);
+}
+
+.icon-cart:hover {
+    color: rgba(92, 187, 187, 0.918);
+}
+
+.cart-vacio {
+    color: rgba(92, 187, 187, 0.918);
+    height: 840px;
+}
+
+.title__cart{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.button__cart {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.button__cart input {
+    background-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    border-radius: 1rem;
+    color: black;
+}
+
+.button__cart input:hover {
+    background-color: rgba(92, 187, 187, 0.918);
+}
+
+.item-cart {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.item-cart img{
+    width: 100px;
+    height: auto;
+}
+
+.item-cart ul {
+    display: flex;  
+    list-style-type: none;
+    color: aliceblue;
+}
+
+.item-card li {
+    padding: 0;
+}
+
+
+.button_itemcart {
+    width: 200px;
+    height: auto;
+}
+
+.total-price {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.emitir-compra {
+    display: flex;
+    justify-content: center;
+}
+
+.emitir-compra button {
+    background-color: aliceblue;
+    width: 200px;
+    height: 50px;
+    border-radius: 1rem;
+    color: black;
+}
+
+.emitir-compra button:hover {
+    background-color: rgba(92, 187, 187, 0.918);
+}
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(57, 60, 60, 0.918);
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 2rem;
+}
+
+.checkout input {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2rem;   
+}
+
+.input-button {
+    margin-top: 10px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.input-button:hover {
+    background-color: rgba(92, 187, 187, 0.918);
+}
